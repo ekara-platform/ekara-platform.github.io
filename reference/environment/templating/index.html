@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.58.1" />
+    <meta name="description" content="Documentation for the Ekara cloud platform">
+<meta name="author" content="The Ekara team">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Templating :: Documentation for the Ekara cloud platform</title>
+
+    
+    <link href="/css/nucleus.css?1570269463" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1570269463" rel="stylesheet">
+    <link href="/css/hybrid.css?1570269463" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1570269463" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1570269463" rel="stylesheet">
+    <link href="/css/auto-complete.css?1570269463" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1570269463" rel="stylesheet">
+    <link href="/css/theme.css?1570269463" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1570269463" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1570269463" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1570269463"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    <link href="/css/style.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+  </head>
+  <body class="" data-url="/reference/environment/templating/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://ekara-platform.github.io/" xmlns="http://www.w3.org/1999/html">
+  <img src="http://ekara-platform.github.io//img/ekara_256px.png"/> <span>Ekara</span>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1570269463"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1570269463"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/ekara-platform.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1570269463"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Getting started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Getting started
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Reference" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/reference/">
+          <b>2. </b>Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/environment/" title="Environment" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/reference/environment/">
+          Environment
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/environment/components/" title="Component model" class="dd-item ">
+        <a href="/reference/environment/components/">
+        Component model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/environment/descriptor/" title="Descriptor syntax" class="dd-item ">
+        <a href="/reference/environment/descriptor/">
+        Descriptor syntax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/environment/templating/" title="Templating" class="dd-item active">
+        <a href="/reference/environment/templating/">
+        Templating
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/cli/" title="Command-line interface (CLI)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/reference/cli/">
+          Command-line interface (CLI)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/cli/commands/" title="Commands" class="dd-item ">
+        <a href="/reference/cli/commands/">
+        Commands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/cli/variables/" title="External variables" class="dd-item ">
+        <a href="/reference/cli/variables/">
+        External variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/components/" title="Components" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/">
+          <b>3. </b>Components
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/providers/" title="Providers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/providers/">
+          Providers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/providers/aws/" title="AWS provider" class="dd-item ">
+        <a href="/components/providers/aws/">
+        AWS provider
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/orchestrators/" title="Orchestrators" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/orchestrators/">
+          Orchestrators
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/orchestrators/docker-swarm/" title="Swarm orchestrator" class="dd-item ">
+        <a href="/components/orchestrators/docker-swarm/">
+        Swarm orchestrator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/stacks/" title="Stacks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/stacks/">
+          Stacks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/stacks/aws/" title="Ekara core" class="dd-item ">
+        <a href="/components/stacks/aws/">
+        Ekara core
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/tasks/" title="Tasks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/tasks/">
+          Tasks
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/ekara-platform"><i class='fab fa-fw fa-github'></i> Github</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://ekara-platform.github.io/showcase"><i class='fas fa-fw fa-camera'></i> Showcases</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ekara-platform/website/edit/master/content/reference/environment/templating.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Ekara</a> > <a href='/reference/'>Reference</a> > <a href='/reference/environment/'>Environment</a> > Templating
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#meta-model">Meta-model</a></li>
+<li><a href="#templating-additional-files">Templating additional files</a></li>
+<li><a href="#example">Example</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Templating
+            </h1>
+          
+
+        
+
+
+
+
+
+<p>Templating is a data-driven mechanism to generate a particular textual output. In Ekara, templating is done automatically:</p>
+
+<ul>
+<li>Descriptors are always templated,</li>
+<li>Arbitrary files in components can also be templated if needed.</li>
+</ul>
+
+
+<div class="notices note" ><p>Ekara uses the Go <a href="https://golang.org/pkg/text/template">text/template</a> library as its template engine.</p>
+</div>
+
+
+<h2 id="basics">Basics</h2>
+
+<p>Templates are executed by applying them to a data structure, provided by Ekara. The data structure defines the following top-level elements:</p>
+
+<ul>
+<li><code>Vars</code>, which contains user-defined variables.</li>
+<li><code>Model</code>, which contains functions to access a read-only view of the environment model.</li>
+<li><code>Runtime</code>, which contains functions to access a read-only view of execution data.</li>
+</ul>
+
+<p>The input text for a template is UTF-8-encoded text in any format. Actions (data evaluations or control structure) are delimited by <code>{{</code> and <code>}}</code>:</p>
+
+<pre><code>name: {{ .Vars.myProject.name }}
+</code></pre>
+
+<p>All text outside those delimiters is copied to the output unchanged.</p>
+
+
+<div class="notices tip" ><p>Execution of the template walks the structure and sets the cursor, represented by a period <code>.</code> and called &ldquo;dot&rdquo;, to the value at the current location in the structure as execution proceeds. For instance, in loops the dot become a reference to the current item. It can also be set explictly using the <code>with</code> action.</p>
+</div>
+
+
+<h2 id="variables">Variables</h2>
+
+<p>The <code>.Vars</code> section of the structure contains the accumulation of:</p>
+
+<ul>
+<li>The external variables (for instance given by a var file from the command-line).</li>
+<li>The descriptor variables, given by the <code>vars</code> section.</li>
+</ul>
+
+<p>Because the <code>.Vars</code> section is populated sequentially during the environment model aggregation, a particular descriptor can only be templated by:</p>
+
+<ul>
+<li>The external variables,</li>
+<li>The variables declared up in its inheritance chain:
+
+<ul>
+<li>In the parent(s)</li>
+<li>In the components referenced from the parent(s)</li>
+</ul></li>
+<li>Its own variables.</li>
+</ul>
+
+<h2 id="meta-model">Meta-model</h2>
+
+<p>The <code>.Model</code> section of the structure contains functions to access a read-only view of the environment model currently worked on. It can be think of as the meta-model of the Ekara engine.</p>
+
+
+<div class="notices note" ><p>The meta-model exported interfaces are documented at <a href="https://godoc.org/github.com/ekara-platform/model/tmodel">https://godoc.org/github.com/ekara-platform/model/tmodel</a>.</p>
+</div>
+
+
+
+<div class="notices info" ><p>Accessing the meta-model during the construction of the model itself is limited. Only <code>.Model.Name</code>, <code>.Model.Qualifier</code> and <code>.Model.QualifiedName</code> are accessible when templating descriptors.</p>
+</div>
+
+
+<h2 id="templating-additional-files">Templating additional files</h2>
+
+<p>The descriptor is always templated but other files of a component can templated too. You can declare files to be templates like this:</p>
+
+<pre><code>templates:
+  - docker-compose.yaml
+  - config/**/*.cfg
+</code></pre>
+
+<p>Template paths must be relative to the descriptor file (i.e. the component root). <a href="https://github.com/gobwas/glob">Glob patterns</a> can be used to match multiple files in a single expression.</p>
+
+
+<div class="notices info" ><p>When templating additional files, all variables are available and meta-model functions can be used without restriction.</p>
+</div>
+
+
+<h2 id="example">Example</h2>
+
+<p>Consider the following &ldquo;variable file&rdquo; passed from the command-line:</p>
+
+<pre><code># Parameters file from the CLI
+app:
+  a: cli_value
+</code></pre>
+
+<p>A parent defining the following variables:</p>
+
+<pre><code># Variables in the parent descriptor
+vars:
+  app:
+    b: parent_{{ .Vars.app.a }}
+    c: parent_value
+</code></pre>
+
+<p>And a main descriptor defining the following variables:</p>
+
+<pre><code># Variables in the main descriptor
+name: myEnv
+qualifier: dev
+vars:
+  app:
+    d: main_{{ .Model.QualifiedName }}_{{ .Vars.app.b }}
+</code></pre>
+
+<p>Final values in the main descriptor will be:</p>
+
+<ul>
+<li><code>{{ .Vars.app.a }}</code> will evaluate to <code>cli_value</code><br /></li>
+<li><code>{{ .Vars.app.b }}</code> will evaluate to <code>parent_cli_value</code><br /></li>
+<li><code>{{ .Vars.app.c }}</code> will evaluate to <code>parent_value</code></li>
+<li><code>{{ .Vars.app.d }}</code> will evaluate to <code>main_myEnv_qualifier_parent_cli_value</code><br /></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/reference/environment/descriptor/" title="Descriptor syntax"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/reference/cli/" title="Command-line interface (CLI)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1570269463"></script>
+    <script src="/js/perfect-scrollbar.min.js?1570269463"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1570269463"></script>
+    <script src="/js/jquery.sticky.js?1570269463"></script>
+    <script src="/js/featherlight.min.js?1570269463"></script>
+    <script src="/js/highlight.pack.js?1570269463"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1570269463"></script>
+    <script src="/js/learn.js?1570269463"></script>
+    <script src="/js/hugo-learn.js?1570269463"></script>
+
+    <link href="/mermaid/mermaid.css?1570269463" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1570269463"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

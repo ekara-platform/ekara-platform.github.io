@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.58.1" />
+    <meta name="description" content="Documentation for the Ekara cloud platform">
+<meta name="author" content="The Ekara team">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Swarm orchestrator :: Documentation for the Ekara cloud platform</title>
+
+    
+    <link href="/css/nucleus.css?1570269463" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1570269463" rel="stylesheet">
+    <link href="/css/hybrid.css?1570269463" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1570269463" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1570269463" rel="stylesheet">
+    <link href="/css/auto-complete.css?1570269463" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1570269463" rel="stylesheet">
+    <link href="/css/theme.css?1570269463" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1570269463" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1570269463" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1570269463"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    <link href="/css/style.css" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+  </head>
+  <body class="" data-url="/components/orchestrators/docker-swarm/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://ekara-platform.github.io/" xmlns="http://www.w3.org/1999/html">
+  <img src="http://ekara-platform.github.io//img/ekara_256px.png"/> <span>Ekara</span>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1570269463"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1570269463"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/ekara-platform.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1570269463"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Getting started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Getting started
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Reference" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/reference/">
+          <b>2. </b>Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/environment/" title="Environment" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/reference/environment/">
+          Environment
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/environment/components/" title="Component model" class="dd-item ">
+        <a href="/reference/environment/components/">
+        Component model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/environment/descriptor/" title="Descriptor syntax" class="dd-item ">
+        <a href="/reference/environment/descriptor/">
+        Descriptor syntax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/environment/templating/" title="Templating" class="dd-item ">
+        <a href="/reference/environment/templating/">
+        Templating
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/cli/" title="Command-line interface (CLI)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/reference/cli/">
+          Command-line interface (CLI)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/cli/commands/" title="Commands" class="dd-item ">
+        <a href="/reference/cli/commands/">
+        Commands
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/cli/variables/" title="External variables" class="dd-item ">
+        <a href="/reference/cli/variables/">
+        External variables
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/components/" title="Components" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/components/">
+          <b>3. </b>Components
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/providers/" title="Providers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/providers/">
+          Providers
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/providers/aws/" title="AWS provider" class="dd-item ">
+        <a href="/components/providers/aws/">
+        AWS provider
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/orchestrators/" title="Orchestrators" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/components/orchestrators/">
+          Orchestrators
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/orchestrators/docker-swarm/" title="Swarm orchestrator" class="dd-item active">
+        <a href="/components/orchestrators/docker-swarm/">
+        Swarm orchestrator
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/stacks/" title="Stacks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/stacks/">
+          Stacks
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/components/stacks/aws/" title="Ekara core" class="dd-item ">
+        <a href="/components/stacks/aws/">
+        Ekara core
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/components/tasks/" title="Tasks" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/components/tasks/">
+          Tasks
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/ekara-platform"><i class='fab fa-fw fa-github'></i> Github</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://ekara-platform.github.io/showcase"><i class='fas fa-fw fa-camera'></i> Showcases</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/ekara-platform/website/edit/master/content/components/orchestrators/docker-swarm.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Ekara</a> > <a href='/components/'>Components</a> > <a href='/components/orchestrators/'>Orchestrators</a> > Swarm orchestrator
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#example">Example</a></li>
+<li><a href="#reference">Reference</a>
+<ul>
+<li><a href="#docker-parameters">Docker parameters</a></li>
+<li><a href="#daemon-configuration">Daemon configuration</a></li>
+<li><a href="#tls-configuration-groups">TLS configuration groups</a></li>
+<li><a href="#remap">Remap</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Swarm orchestrator
+            </h1>
+          
+
+        
+
+
+
+<p>The Swarm orchestrator supports the installation and configuration of a Docker Swarm cluster on an Ekara environment infrastructure.</p>
+
+<div class="notices note" ><p>When using the standard Ekara parent, this orchestrator is enabled and configured with the <code>ek-swarm</code> name.</p>
+</div>
+
+
+<h2 id="example">Example</h2>
+
+<p>The following Ekara descriptor will create 3 small EC2 instances in the &ldquo;eu-west-1&rdquo; region and setup Docker Swarm on it:</p>
+
+<pre><code>name: myEnvironment
+
+ekara:
+  parent:
+    repository: ekara-platform/parent
+    ref: 1.0.0
+
+nodes:
+  app:
+    instances: 3
+    provider:
+      name: ek-aws
+      params:
+        instances:
+          instance_type: &quot;t2.micro&quot;      
+</code></pre>
+
+<p>After creating a minimal infrastructure on AWS (see <a href="/components/providers/aws/">AWS provider reference</a> for details), a <code>deploy</code> command with the descriptor above will:</p>
+
+<ul>
+<li>Ensure that the operating system is fully installed with necessary packages on all nodes.</li>
+<li>Ensure that Docker is installed in the latest version on all nodes.</li>
+<li>Ensure a Swarm cluster exists spanning all nodes.</li>
+<li>Ensure that the Swarm managers/workers are properly affected according to node role.</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+
+<h3 id="docker-parameters">Docker parameters</h3>
+
+<p>The following Docker parameters are supported by the  provider (in the <code>params</code> element):</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>daemon</code></td>
+<td>False</td>
+<td>-</td>
+<td>Everything under this parameter will be written as JSON daemon configuration.</td>
+</tr>
+
+<tr>
+<td><code>tls</code></td>
+<td>False</td>
+<td>-</td>
+<td>Options for TLS configuration of the daemon.</td>
+</tr>
+
+<tr>
+<td><code>remap</code></td>
+<td>False</td>
+<td>True</td>
+<td>If true the containers will be isolated with a user namepsace.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="daemon-configuration">Daemon configuration</h3>
+
+<p>The elements under <code>daemon</code> parameter will be written as the <a href="https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file">Docker JSON configuration file</a>.</p>
+
+<p>The default daemon configuration is:</p>
+
+<pre><code>daemon:
+  log-driver: json-file
+  log-opts:
+    max-size: &quot;20m&quot;
+    max-file: &quot;3&quot;
+  userland-proxy: true
+  live-restore: false
+  hosts:
+    - &quot;unix:///var/run/docker.sock&quot;
+    - &quot;tcp://0.0.0.0:2376&quot;    
+</code></pre>
+
+<p>Any value can be overridden.</p>
+
+<h3 id="tls-configuration-groups">TLS configuration groups</h3>
+
+<p>The <code>tls</code> parameter controls the TLS configuration of the Docker daemon. This is the default configuration with explanations as comments:</p>
+
+<pre><code>tls:
+  # If true TLS will be required, if false Docker daemon will accept unsecured connections.
+  enabled: true
+  # The path of the CA certificate nodes
+  cacert: &quot;/etc/docker/certs/ca.pem&quot;
+  # The path of the certificate nodes
+  cert: &quot;/etc/docker/certs/cert.pem&quot;
+  # The path of the key nodes
+  key: &quot;/etc/docker/certs/key.pem&quot;
+</code></pre>
+
+<h3 id="remap">Remap</h3>
+
+<p>If the <code>remap</code> parameter is set to <code>True</code> (its default value), containers will be isolated from the host using a <a href="https://docs.docker.com/engine/security/userns-remap/">a user namespace</a>. Enabling this improves security as it prevents UIDs in containers to have any privilege on the host.</p>
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/components/orchestrators/" title="Orchestrators"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/components/stacks/" title="Stacks" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1570269463"></script>
+    <script src="/js/perfect-scrollbar.min.js?1570269463"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1570269463"></script>
+    <script src="/js/jquery.sticky.js?1570269463"></script>
+    <script src="/js/featherlight.min.js?1570269463"></script>
+    <script src="/js/highlight.pack.js?1570269463"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1570269463"></script>
+    <script src="/js/learn.js?1570269463"></script>
+    <script src="/js/hugo-learn.js?1570269463"></script>
+
+    <link href="/mermaid/mermaid.css?1570269463" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1570269463"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

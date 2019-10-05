@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ekara on Documentation for the Ekara cloud platform</title>
+    <link>http://ekara-platform.github.io/</link>
+    <description>Recent content in Ekara on Documentation for the Ekara cloud platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="http://ekara-platform.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS provider</title>
+      <link>http://ekara-platform.github.io/components/providers/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/components/providers/aws/</guid>
+      <description>&lt;p&gt;The AWS provider supports the creation and configuraton of Amazon Web-Services EC2 infrastructure to deploy Ekara environments.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Commands</title>
+      <link>http://ekara-platform.github.io/reference/cli/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/reference/cli/commands/</guid>
+      <description>List of available commands:
+ check: validates an existing environment descriptor. deploy deploys a new environment (validate descriptor, create infrastructure, install OS + orchestrator and deploy stacks). dump: dumps the effective environment descriptor (fully aggregated and templated). help: displays a list of the available commands or display help on a particular command. version: displays the Ekara version.  You can use the -h or --help option on any command to get further help.</description>
+    </item>
+    
+    <item>
+      <title>Component model</title>
+      <link>http://ekara-platform.github.io/reference/environment/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/reference/environment/components/</guid>
+      <description>Before doing any work, the Ekara engine must build a model of the environment that is worked on. This model is aggregated from multiple descriptors, located in components that must be discovered, fetched et parsed. A component:
+ Lives in a source repository which is fetched dynamically when necessary. Can optionally contain a descriptor file, named ekara.yaml by default.  The first component to be fetched is either specified in the command-line (in the case of a new environment) or already known (in the case of an existing environment).</description>
+    </item>
+    
+    <item>
+      <title>Descriptor syntax</title>
+      <link>http://ekara-platform.github.io/reference/environment/descriptor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/reference/environment/descriptor/</guid>
+      <description>The Ekara descriptor is a YAML document consisting of the following top-level sections:
+ The general properties, defining basic information of the environment. The ekara section, defining the environment base and components. The vars section, declaring variables that can be used throughout all descriptors and templated files. The templates section, declaring files relative to the descriptor that needs templating. The providers section, declaring infrastructure providers capable of creating nodes. The orchestrator section, declaring the Docker orchestrator to use.</description>
+    </item>
+    
+    <item>
+      <title>Ekara core</title>
+      <link>http://ekara-platform.github.io/components/stacks/aws/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/components/stacks/aws/</guid>
+      <description>&lt;p&gt;The Ekara core stack contains the essential components to allows the Ekara platform to work.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>External variables</title>
+      <link>http://ekara-platform.github.io/reference/cli/variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/reference/cli/variables/</guid>
+      <description>CLI commands working with a descriptor accept the -p, --param, which specifies the YAML to use as a source for external variables. Those variables can then be used in templating. Templating is always applied to descriptors and can be optionally applied to arbitrary files in components.
+Variables Variables can come from:
+ An external source like the file described here, A vars section in that can be specified in each descriptor file.</description>
+    </item>
+    
+    <item>
+      <title>Swarm orchestrator</title>
+      <link>http://ekara-platform.github.io/components/orchestrators/docker-swarm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/components/orchestrators/docker-swarm/</guid>
+      <description>&lt;p&gt;The Swarm orchestrator supports the installation and configuration of a Docker Swarm cluster on an Ekara environment infrastructure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Templating</title>
+      <link>http://ekara-platform.github.io/reference/environment/templating/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/reference/environment/templating/</guid>
+      <description>Templating is a data-driven mechanism to generate a particular textual output. In Ekara, templating is done automatically:
+ Descriptors are always templated, Arbitrary files in components can also be templated if needed.  Ekara uses the Go text/template library as its template engine.
+ Basics Templates are executed by applying them to a data structure, provided by Ekara. The data structure defines the following top-level elements:
+ Vars, which contains user-defined variables.</description>
+    </item>
+    
+  </channel>
+</rss>

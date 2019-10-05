@@ -1,0 +1,16 @@
+@import "sidebar.css";
+
+body {
+    font-size: 14px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    background: #eee;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+}
+
+.logo-main {
+    float: right;
+    margin: 0 !important;
+}

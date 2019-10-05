@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orchestrators on Documentation for the Ekara cloud platform</title>
+    <link>http://ekara-platform.github.io/components/orchestrators/</link>
+    <description>Recent content in Orchestrators on Documentation for the Ekara cloud platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="http://ekara-platform.github.io/components/orchestrators/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Swarm orchestrator</title>
+      <link>http://ekara-platform.github.io/components/orchestrators/docker-swarm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ekara-platform.github.io/components/orchestrators/docker-swarm/</guid>
+      <description>&lt;p&gt;The Swarm orchestrator supports the installation and configuration of a Docker Swarm cluster on an Ekara environment infrastructure.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

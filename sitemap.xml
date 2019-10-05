@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://ekara-platform.github.io/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/providers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/environment/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/orchestrators/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/stacks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/tasks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/providers/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/cli/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/cli/commands/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/environment/components/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/environment/descriptor/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/stacks/aws/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/cli/variables/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/components/orchestrators/docker-swarm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://ekara-platform.github.io/reference/environment/templating/</loc>
+  </url>
+  
+</urlset>
